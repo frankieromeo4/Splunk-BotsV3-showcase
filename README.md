@@ -14,6 +14,8 @@ index="botsv3" sourcetype="stream:ip" (src_mac=* AND dest_mac=*)
 |stats count by src_ip src_mac 
 |sort - count 
 |head 10
+
+Here instead of seeing multiple duplicate ip addressses it puts each them in a counter and lists them from greatest to least. The head feature allows you to list a certain amount, with my search i listed the top 10.
 ![Description](https://i.imgur.com/z3UiB20.png)
 
 ![Desktop Screenshot](https://i.imgur.com/pyTvog1.png)
