@@ -1,9 +1,12 @@
 # Splunk-BotsV3-showcase
 index="botsv3" sourcetype="stream:ip"
+I wanted to start this search off with taking a look at some src_ip
 ![Screenshot](https://i.imgur.com/4I1HBLt.jpg)
 
 index="botsv3" sourcetype="stream:ip" (src_mac=* AND dest_mac=*)
 |table _time src_ip src_mac dest_ip dest_mac
+
+With the table function as you can see in the picture list out some of the keys things i want to see and leaves the rest out.  (src_mac=* AND dest_mac=*) just makes sure it only shows those with values in it.
 ![Description](https://i.imgur.com/5mBrMNY.png)
 
 index="botsv3" sourcetype="stream:ip" (src_mac=* AND dest_mac=*)
